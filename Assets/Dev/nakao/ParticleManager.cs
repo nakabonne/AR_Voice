@@ -1,6 +1,7 @@
 ﻿/// <summary>
 /// 使い方
-/// ParticleManager.Instance.Create("パーティクル名");
+/// ①Resourcesディレクトリ配下に生成したいパーティクルを配置
+/// ②ParticleManager.Instance.Create("パーティクル名");
 /// </summary>
 using System.Collections;
 using System.Collections.Generic;
@@ -9,6 +10,6 @@ using UnityEngine;
 public class ParticleManager : SingletonMonoBehaviour<ParticleManager> {
 
 	public GameObject Create(string name){
-		return (GameObject)Resources.Load (name);
+		return (GameObject)Resources.Load (string.Format("Particles/{0}", name));
 	}
 }
