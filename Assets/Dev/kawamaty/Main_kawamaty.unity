@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44659358, g: 0.49642974, b: 0.574825, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -185,8 +185,9 @@ Transform:
   m_GameObject: {fileID: 104259946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 112.6, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 10}
-  m_Children: []
+  m_LocalScale: {x: 300, y: 100, z: 100}
+  m_Children:
+  - {fileID: 1238132904}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -548,6 +549,47 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1165314564}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1238132902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1238132904}
+  - component: {fileID: 1238132903}
+  m_Layer: 0
+  m_Name: EnemyBulletGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1238132903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1238132902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e49250be1fb4e8b947b6c6b3bad291, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1892085054181708, guid: bc4e6b2b2c64648d1b7b9bf527ae73f2, type: 2}
+--- !u!4 &1238132904
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1238132902}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.0033333332, y: 0.01, z: 0.01}
+  m_Children: []
+  m_Father: {fileID: 104259950}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1433001781
 Prefab:
   m_ObjectHideFlags: 0
@@ -649,7 +691,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44af8c7211e9e49e6884faa5c817aaec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 1892085054181708, guid: bc4e6b2b2c64648d1b7b9bf527ae73f2, type: 2}
 --- !u!21 &1793329799
 Material:
   serializedVersion: 6

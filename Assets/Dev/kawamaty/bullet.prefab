@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 135876323612064884}
   - component: {fileID: 23668541702537996}
   - component: {fileID: 54852074850216978}
+  - component: {fileID: 114773786849092332}
   m_Layer: 0
   m_Name: bullet
   m_TagString: Untagged
@@ -38,7 +39,7 @@ Transform:
   m_GameObject: {fileID: 1892085054181708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.2652961, y: 1.545725, z: -0.415383}
-  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -56,7 +57,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ed4140cff4aa74a7fbd6358ec3f3894d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,6 +98,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114773786849092332
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1892085054181708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44af8c7211e9e49e6884faa5c817aaec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135876323612064884
 SphereCollider:
   m_ObjectHideFlags: 1
