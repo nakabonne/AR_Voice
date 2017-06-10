@@ -3,14 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Words : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	public static string[] meteo = {"メテオ","右手よ"};
+	public static string[] sunder = {"サンダー"};
+	public static string[] fire = {"ファイヤー"};
+	public static string[] tanaka = { "田中" };
 }
