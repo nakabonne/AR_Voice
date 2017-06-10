@@ -14,6 +14,7 @@ public class MySceneManager : SingletonMonoBehaviour<MySceneManager> {
 	}
 
 	public void GoToMain(int stage){
+		StageManager.Instance.stage = stage;
 		SceneManager.LoadScene ("Main");
 	}
 
