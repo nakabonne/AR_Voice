@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MySceneManager : SingletonMonoBehaviour<MySceneManager> {
 
-	public static void GoToTitle(){
+	public void GoToTitle(){
 		SceneManager.LoadScene ("Title");
 	}
 
@@ -13,7 +13,7 @@ public class MySceneManager : SingletonMonoBehaviour<MySceneManager> {
 		SceneManager.LoadScene ("StageSelect");
 	}
 
-	public static void GoToMain(){
+	public void GoToMain(int stage){
 		SceneManager.LoadScene ("Main");
 	}
 
