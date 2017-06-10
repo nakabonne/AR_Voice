@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMove : MonoBehaviour {
+public class AudioManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ParticleFactory : MonoBehaviour {
+public class ParticleManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
