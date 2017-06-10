@@ -1922,7 +1922,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 203c598a81fe146d7a6e680245e55e71, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -1955,7 +1955,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d1d143ffefac4d80ae69ba4df6a0654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: 
   speech: {fileID: 1768436867}
 --- !u!4 &1870350921
 Transform:
