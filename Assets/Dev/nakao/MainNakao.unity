@@ -398,7 +398,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4808da63383a04c78a33bfdd2f2a0af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 100
   isStarted: 0
 --- !u!1 &371955367
 GameObject:
@@ -542,6 +541,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e2fad2a00ac4a73808f7f86145405f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BGMList:
+  - {fileID: 8300000, guid: c472912cf631c4a5d852f3cc565dc690, type: 3}
+  SEList:
+  - {fileID: 8300000, guid: 796e86c471a004044ab9138667ff6aa9, type: 3}
+  - {fileID: 8300000, guid: 6888810c402d0416e83acdf44cdab7c7, type: 3}
+  MaxSE: 10
 --- !u!1001 &1131664476
 Prefab:
   m_ObjectHideFlags: 0
