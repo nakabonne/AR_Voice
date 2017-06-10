@@ -8,8 +8,9 @@ public class PlayerAttack : MonoBehaviour {
 
 	[SerializeField]
 	private SpeechMessage speechMessage;
-	[SerializeField]
-	GameObject prefab;
+	[SerializeField] GameObject hazeroPrefab;
+	[SerializeField] GameObject sunderPrefab;
+	[SerializeField] GameObject meteoPrefab;
 
 	// Use this for initialization
 	void Start () {
@@ -24,14 +25,13 @@ public class PlayerAttack : MonoBehaviour {
 		
 	}
 
-	void Attack(string mes){
-		if (Words.tanaka.Count (message => message == mes) > 0)
-			Instantiate (prefab, new Vector3 (0, 0, 0), Quaternion.identity);
+	public void Attack(string mes){
+		if (Words.hazero.Count (message => message == mes) > 0)
+			Instantiate (hazeroPrefab, new Vector3 (0, 0, 0), Quaternion.identity);
 		if (Words.sunder.Count (message => message == mes) > 0)
-			Instantiate (prefab, new Vector3 (0, 0, 0), Quaternion.identity);
+			Instantiate (sunderPrefab, new Vector3 (0, 0, 0), Quaternion.identity);
 		if (Words.meteo.Count (message => message == mes) > 0)
-			Instantiate (prefab, new Vector3 (0, 0, 0), Quaternion.identity);
-		if (Words.fire.Count (message => message == mes) > 0)
-			Instantiate (prefab, new Vector3 (0, 0, 0), Quaternion.identity);
+			Instantiate (meteoPrefab, new Vector3 (0, 0, 0), Quaternion.identity);
+		if (Words.world.Count (message => message == mes) > 0);
 	}
 }
