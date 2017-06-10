@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		GameStart();
+		Instantiate(ParticleManager.Instance.Create ("Part"));
 	}
 
 	void GameStart(){

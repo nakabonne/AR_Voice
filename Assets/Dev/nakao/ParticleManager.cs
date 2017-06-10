@@ -1,16 +1,14 @@
-﻿using System.Collections;
+﻿/// <summary>
+/// 使い方
+/// ParticleManager.Instance.Create("パーティクル名");
+/// </summary>
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ParticleManager : MonoBehaviour {
+public class ParticleManager : SingletonMonoBehaviour<ParticleManager> {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	public GameObject Create(string name){
+		return (GameObject)Resources.Load (name);
 	}
 }
