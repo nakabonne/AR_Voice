@@ -20,7 +20,7 @@ public class TimeManager : SingletonMonoBehaviour<TimeManager> {
 
 	void Stop(){
 		time = 0.0f;
-		GameManager.GameEnd ();
+		GameManager.GameEnd (0);
 	}
 		
 

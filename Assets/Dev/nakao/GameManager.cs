@@ -15,7 +15,8 @@ public class GameManager : MonoBehaviour {
 		isStarted = true;
 	}
 
-	public static void GameEnd(){
+	public static void GameEnd(int score){
+		ScoreManager.Instance.Set (score);
 		isStarted = false;
 	}
 }
