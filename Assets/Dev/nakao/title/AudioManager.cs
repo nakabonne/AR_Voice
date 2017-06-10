@@ -1,9 +1,14 @@
 ﻿/// <summary>
+/// 準備
+///  ①ゲームオブジェクトにこのクラスをアタッチ
+///  ②Inspectorのsizeを変更
+///  ③Elementに音源ファイルをアタッチ
+/// 
 /// BGM流し方
-/// AudioManager.Instance.PlayBGM("BGMファイル名");
+///  AudioManager.Instance.PlayBGM("BGMファイル名");
 /// 
 /// SE流し方
-/// AudioManager.Instance.PlaySE("SEファイル名");
+///  AudioManager.Instance.PlaySE("SEファイル名");
 /// </summary>
 using UnityEngine;
 using System;

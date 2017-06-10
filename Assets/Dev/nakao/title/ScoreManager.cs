@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScoreManager : SingletonMonoBehaviour<ScoreManager> {
 
-	int score;
+	public int score;
 
 	public void Reset(){
 		score = 0;
