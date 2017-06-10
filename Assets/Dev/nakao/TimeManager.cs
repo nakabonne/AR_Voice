@@ -6,31 +6,21 @@ public class TimeManager : SingletonMonoBehaviour<TimeManager> {
 
 	[SerializeField]
 	static float timeLimit = 60;
-	public float time = timeLimit;
+	float time = timeLimit;
 	[SerializeField]
 	bool isStarted = false;
 
-	// Use this for initialization
-	void Start () {        
-	}
-
 	// Update is called once per frame
 	void Update () {
-		if (isStarted) {
+		if (GameManager.isStarted) {
 			CountDown ();
 			if (time < 0.0f) {
 				time = 0.0f;
+				GameManager.GameEnd ();
 			}
 		}
 	}
-
-	public void InitTimer(){
-		time = timeLimit;
-	}
-
-	public void StartTimer(){
-		isStarted = true;
-	}
+		
 
 	void CountDown(){
 		if (time > 0) {
@@ -38,7 +28,4 @@ public class TimeManager : SingletonMonoBehaviour<TimeManager> {
 		}
 	}
 
-	public void EndCount(){
-		isStarted = false;
-	}
 }
