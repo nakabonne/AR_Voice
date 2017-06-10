@@ -13,19 +13,19 @@ public class TimeManager : SingletonMonoBehaviour<TimeManager> {
 	// Update is called once per frame
 	void Update () {
 		if (GameManager.isStarted) {
-			CountDown ();
-			if (time < 0.0f) {
-				time = 0.0f;
-				GameManager.GameEnd ();
-			}
+			if (time > 0) CountDown ();
+			if (time < 0) Stop ();
 		}
+	}
+
+	void Stop(){
+		time = 0.0f;
+		GameManager.GameEnd ();
 	}
 		
 
 	void CountDown(){
-		if (time > 0) {
-			time -= Time.deltaTime;
-		}
+	    time -= Time.deltaTime;
 	}
 
 }
