@@ -9,7 +9,7 @@ public class MySceneManager : SingletonMonoBehaviour<MySceneManager> {
 		SceneManager.LoadScene ("Title");
 	}
 
-	public static void GoToStageSelect(){
+	public void GoToStageSelect(){
 		SceneManager.LoadScene ("StageSelect");
 	}
 
@@ -17,7 +17,7 @@ public class MySceneManager : SingletonMonoBehaviour<MySceneManager> {
 		SceneManager.LoadScene ("Main");
 	}
 
-	public static void GoToResult(){
+	public void GoToResult(){
 		SceneManager.LoadScene ("Result");
 	}
 }

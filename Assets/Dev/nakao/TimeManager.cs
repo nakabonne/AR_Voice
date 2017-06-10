@@ -7,12 +7,10 @@ public class TimeManager : SingletonMonoBehaviour<TimeManager> {
 	[SerializeField]
 	static float timeLimit = 60;
 	float time = timeLimit;
-	[SerializeField]
-	bool isStarted = false;
 
 	// Update is called once per frame
 	void Update () {
-		if (GameManager.isStarted) {
+		if (GameManager.isPlaying) {
 			if (time > 0) CountDown ();
 			if (time < 0) Stop ();
 		}

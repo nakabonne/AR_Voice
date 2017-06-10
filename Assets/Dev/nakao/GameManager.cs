@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-	public static bool isStarted;
+	public static bool isPlaying;
 
 	// Use this for initialization
 	void Start () {
@@ -12,11 +12,12 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void GameStart(){
-		isStarted = true;
+		isPlaying = true;
 	}
 
 	public static void GameEnd(int score){
+		isPlaying = false;
 		ScoreManager.Instance.Set (score);
-		isStarted = false;
+		MySceneManager.Instance.GoToResult ();
 	}
 }
