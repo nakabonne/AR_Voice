@@ -1,0 +1,310 @@
+fileFormatVersion: 2
+guid: 4f2016f8064ac7249b93183d2db2f684
+timeCreated: 1460251636
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bip01 Head
+    100004: Bip01 L Clavicle
+    100006: Bip01 L Finger0
+    100008: Bip01 L Finger01
+    100010: Bip01 L Finger1
+    100012: Bip01 L Finger11
+    100014: Bip01 L Forearm
+    100016: Bip01 L Hand
+    100018: Bip01 L UpperArm
+    100020: Bip01 Neck
+    100022: Bip01 Pelvis
+    100024: Bip01 R Clavicle
+    100026: Bip01 R Finger0
+    100028: Bip01 R Finger01
+    100030: Bip01 R Finger1
+    100032: Bip01 R Finger11
+    100034: Bip01 R Forearm
+    100036: Bip01 R Hand
+    100038: Bip01 R UpperArm
+    100040: Bip01 Spine
+    100042: Bip01 Spine1
+    100044: Bip_master
+    100046: Bip_weapon
+    100048: Bone_chibang_l_01
+    100050: Bone_chibang_l_02
+    100052: Bone_chibang_l_03
+    100054: Bone_chibang_l_04
+    100056: Bone_chibang_r_01
+    100058: Bone_chibang_r_02
+    100060: Bone_chibang_r_03
+    100062: Bone_chibang_r_04
+    100064: Bone_jianbang_l
+    100066: Bone_jianbang_r
+    100068: Bone_qunbai_01
+    100070: Bone_qunbai_02
+    100072: Bone_qunbai_03
+    100074: Directional Light
+    100076: Main Camera
+    100078: n2017
+    100080: n2017_1
+    100082: slot_billboard
+    100084: slot_camera
+    100086: slot_chest
+    100088: slot_head
+    100090: slot_weapon_fx
+    400000: //RootNode
+    400002: Bip01 Head
+    400004: Bip01 L Clavicle
+    400006: Bip01 L Finger0
+    400008: Bip01 L Finger01
+    400010: Bip01 L Finger1
+    400012: Bip01 L Finger11
+    400014: Bip01 L Forearm
+    400016: Bip01 L Hand
+    400018: Bip01 L UpperArm
+    400020: Bip01 Neck
+    400022: Bip01 Pelvis
+    400024: Bip01 R Clavicle
+    400026: Bip01 R Finger0
+    400028: Bip01 R Finger01
+    400030: Bip01 R Finger1
+    400032: Bip01 R Finger11
+    400034: Bip01 R Forearm
+    400036: Bip01 R Hand
+    400038: Bip01 R UpperArm
+    400040: Bip01 Spine
+    400042: Bip01 Spine1
+    400044: Bip_master
+    400046: Bip_weapon
+    400048: Bone_chibang_l_01
+    400050: Bone_chibang_l_02
+    400052: Bone_chibang_l_03
+    400054: Bone_chibang_l_04
+    400056: Bone_chibang_r_01
+    400058: Bone_chibang_r_02
+    400060: Bone_chibang_r_03
+    400062: Bone_chibang_r_04
+    400064: Bone_jianbang_l
+    400066: Bone_jianbang_r
+    400068: Bone_qunbai_01
+    400070: Bone_qunbai_02
+    400072: Bone_qunbai_03
+    400074: Directional Light
+    400076: Main Camera
+    400078: n2017
+    400080: n2017_1
+    400082: slot_billboard
+    400084: slot_camera
+    400086: slot_chest
+    400088: slot_head
+    400090: slot_weapon_fx
+    4300000: n2017_1
+    7400000: hit
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: n2017_1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: hit
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 11
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Directional Light
+        weight: 1
+      - path: Main Camera
+        weight: 1
+      - path: n2017
+        weight: 1
+      - path: n2017/Bip_master
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          Head
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          Head/slot_head
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          L Clavicle
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          L Clavicle/Bip01 L UpperArm
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          L Clavicle/Bip01 L UpperArm/Bip01 L Forearm
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          L Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          L Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 L Finger0
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          L Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 L Finger0/Bip01
+          L Finger01
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          L Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 L Finger1
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          L Clavicle/Bip01 L UpperArm/Bip01 L Forearm/Bip01 L Hand/Bip01 L Finger1/Bip01
+          L Finger11
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          L Clavicle/Bone_jianbang_l
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          R Clavicle
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          R Clavicle/Bip01 R UpperArm
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          R Clavicle/Bip01 R UpperArm/Bip01 R Forearm
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          R Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          R Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 R Finger0
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          R Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 R Finger0/Bip01
+          R Finger01
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          R Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 R Finger1
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          R Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip01 R Finger1/Bip01
+          R Finger11
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          R Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip_weapon
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          R Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Bip_weapon/slot_weapon_fx
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01
+          R Clavicle/Bone_jianbang_r
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bone_chibang_l_01
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bone_chibang_l_01/Bone_chibang_l_02
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bone_chibang_l_01/Bone_chibang_l_02/Bone_chibang_l_03
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bone_chibang_l_01/Bone_chibang_l_02/Bone_chibang_l_03/Bone_chibang_l_04
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bone_chibang_r_01
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bone_chibang_r_01/Bone_chibang_r_02
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bone_chibang_r_01/Bone_chibang_r_02/Bone_chibang_r_03
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bone_chibang_r_01/Bone_chibang_r_02/Bone_chibang_r_03/Bone_chibang_r_04
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/slot_chest
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bone_qunbai_01
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bone_qunbai_01/Bone_qunbai_02
+        weight: 1
+      - path: n2017/Bip_master/Bip01 Pelvis/Bone_qunbai_01/Bone_qunbai_02/Bone_qunbai_03
+        weight: 1
+      - path: n2017/n2017_1
+        weight: 1
+      - path: n2017/slot_billboard
+        weight: 1
+      - path: n2017/slot_camera
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
