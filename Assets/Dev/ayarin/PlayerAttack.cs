@@ -26,12 +26,15 @@ public class PlayerAttack : MonoBehaviour {
 	}
 
 	public void Attack(string mes){
-		if (Words.hazero.Count (message => message == mes) > 0)
-			Instantiate (hazeroPrefab, new Vector3 (0, 0, 0), Quaternion.identity);
+		if (Words.hazero.Count (message => message == mes) > 0) {
+			Instantiate (hazeroPrefab, transform.position, Quaternion.identity);
+
+		}
 		if (Words.sunder.Count (message => message == mes) > 0)
-			Instantiate (sunderPrefab, new Vector3 (0, 0, 0), Quaternion.identity);
+			Instantiate (sunderPrefab, transform.position, Quaternion.identity);
 		if (Words.meteo.Count (message => message == mes) > 0)
-			Instantiate (meteoPrefab, new Vector3 (0, 0, 0), Quaternion.identity);
-		if (Words.world.Count (message => message == mes) > 0);
+			Instantiate (meteoPrefab, transform.position, Quaternion.identity);
+		if (Words.world.Count (message => message == mes) > 0)
+			TimeManager.Instance.SetSlow();
 	}
 }
