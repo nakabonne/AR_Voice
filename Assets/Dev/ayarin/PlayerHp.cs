@@ -17,4 +17,8 @@ public class PlayerHp : MonoBehaviour {
 			Damage (2);
 		}
 	}
+
+	public int GetHp(){
+		return hp;
+	}
 }

@@ -34,8 +34,8 @@ public class RecordButton : MonoBehaviour
 		SpeakToMeForUnity.RecordButtonTapped();
 		GetComponent<Image> ().sprite = micOn;
 		frame.fillAmount = 1;
-		frame.DOFillAmount (0, 5f);
-		Invoke ("AfterTapp", 5f);
+		frame.DOFillAmount (0, 3f);
+		Invoke ("AfterTapp", 3f);
 	}
 
 	void AfterTapp(){

@@ -13,7 +13,7 @@ public class TimeManager : SingletonMonoBehaviour<TimeManager> {
 	// Update is called once per frame
 	void Update () {
 		if (GameManager.isPlaying) {
-			//if (time > 0) CountDown ();
+			if (time > 0) CountDown ();
 			if (time < 0) Stop ();
 		}
 	}
