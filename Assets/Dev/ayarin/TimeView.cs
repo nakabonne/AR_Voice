@@ -1,18 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class MoveSphere : MonoBehaviour {
+public class TimeView : MonoBehaviour {
 
-	public Vector3 targetPosition;
+	public Text timeLabel;
 
 	// Use this for initialization
 	void Start () {
-		Destroy (this.gameObject, 10f);
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.localPosition += Vector3.forward;
+		timeLabel.text = TimeManager.Instance.GetTime ().ToString("f2");
 	}
 }
