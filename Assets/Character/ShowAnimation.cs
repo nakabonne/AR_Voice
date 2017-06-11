@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-using UnityEditor;
+//using UnityEditor;
 
 public class ShowAnimation : MonoBehaviour {
 
@@ -13,7 +13,7 @@ public class ShowAnimation : MonoBehaviour {
 	public string CurAnimName;
 	// Use this for initialization
 	void Start () {
-		AddAnim ();
+		//AddAnim ();
 	}
 	
 	// Update is called once per frame
@@ -35,15 +35,15 @@ public class ShowAnimation : MonoBehaviour {
 			i =0;
 		}
 		AinObjs [i].SetActive(true);
-		AddAnim ();
+		//AddAnim ();
 	}
 
 	
-	void AddAnim () 
-	{
-		ain = AinObjs [i].GetComponent<Animation>();
-		clips = AnimationUtility.GetAnimationClips(ain);
-	}
+	//void AddAnim () 
+	//{
+	//	ain = AinObjs [i].GetComponent<Animation>();
+	//	clips = AnimationUtility.GetAnimationClips(ain);
+	//}
 	void PlayAnim ()
 	{
 		AinObjs [i].GetComponent<Animation>().Play (clips [CurAnimClip].name);

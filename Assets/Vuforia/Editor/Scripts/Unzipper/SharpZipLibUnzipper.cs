@@ -3,7 +3,7 @@ Copyright (c) 2013-2014 Qualcomm Connected Experiences, Inc.
 All Rights Reserved.
 Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
-
+/*
 using System.IO;
 using UnityEditor;
 
@@ -33,3 +33,4 @@ namespace Vuforia.EditorClasses
         }
     }
 }
+*/
