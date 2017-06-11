@@ -8,7 +8,7 @@ public class MySceneManager : SingletonMonoBehaviour<MySceneManager> {
 	public void GoToTitle(){
 		SceneManager.LoadScene ("Title");
 	}
-
+		
 	public void GoToStageSelect(){
 		SceneManager.LoadScene ("StageSelect");
 	}
