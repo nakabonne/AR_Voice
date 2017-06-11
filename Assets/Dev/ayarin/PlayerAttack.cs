@@ -8,6 +8,7 @@ public class PlayerAttack : MonoBehaviour {
 
 	[SerializeField]
 	private SpeechMessage speechMessage;
+	[SerializeField] GameObject worldPanel;
 	[SerializeField] GameObject hazeroPrefab;
 	[SerializeField] GameObject sunderPrefab;
 	[SerializeField] GameObject meteoPrefab;
@@ -46,7 +47,14 @@ public class PlayerAttack : MonoBehaviour {
 			ins = Instantiate (spherePrefab, transform.position, Quaternion.identity);
 			ins.GetComponent<MoveSphere> ().targetPosition = this.transform.GetChild (0).gameObject.transform.position;
 		}
-		if (Words.world.Count (message => message == mes) > 0)
-			TimeManager.Instance.SetSlow();
+		if (Words.world.Count (message => message == mes) > 0) {
+			TimeManager.Instance.SetSlow ();
+			worldPanel.SetActive (true);
+			Invoke ("worldFunc",5f);
+		}
+	}
+
+	void worldFunc(){
+		worldPanel.SetActive (false);
 	}
 }
