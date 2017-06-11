@@ -11,7 +11,7 @@ public class EnemyBullet : MonoBehaviour {
 	}
 	//bulletではなくthisを使って自分インスタンス自身を参照
 	void Update () {
-		transform.Translate (0, 0, 10);
+		transform.Translate (Vector3.forward * 1000 * Time.deltaTime);
 	}
 		
 }
