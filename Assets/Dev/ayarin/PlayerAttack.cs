@@ -30,24 +30,28 @@ public class PlayerAttack : MonoBehaviour {
 
 	public void Attack(string mes){
 		if (Words.hazero.Count (message => message == mes) > 0) {
+			AudioManager.Instance.PlaySE("magic-ice2");
 			ins = Instantiate (hazeroPrefab, transform.position, Quaternion.identity);
 			ins.GetComponent<EffectSettings> ().Target = this.transform.GetChild(0).gameObject;
 			ins = Instantiate (spherePrefab, transform.position, Quaternion.identity);
 			ins.GetComponent<MoveSphere> ().targetPosition = this.transform.GetChild (0).gameObject.transform.position;
 		}
 		if (Words.sunder.Count (message => message == mes) > 0) {
+			AudioManager.Instance.PlaySE("magic-electron4");
 			ins = Instantiate (sunderPrefab, transform.position, Quaternion.identity);
 			ins.GetComponent<EffectSettings> ().Target = this.transform.GetChild(0).gameObject;
 			ins = Instantiate (spherePrefab, transform.position, Quaternion.identity);
 			ins.GetComponent<MoveSphere> ().targetPosition = this.transform.GetChild (0).gameObject.transform.position;
 		}
 		if (Words.meteo.Count (message => message == mes) > 0) {
+			AudioManager.Instance.PlaySE("magic-flame2");
 			ins = Instantiate (meteoPrefab, transform.position, Quaternion.identity);
 			ins.GetComponent<EffectSettings> ().Target = this.transform.GetChild(0).gameObject;
 			ins = Instantiate (spherePrefab, transform.position, Quaternion.identity);
 			ins.GetComponent<MoveSphere> ().targetPosition = this.transform.GetChild (0).gameObject.transform.position;
 		}
 		if (Words.world.Count (message => message == mes) > 0) {
+			AudioManager.Instance.PlaySE("nc150248");
 			TimeManager.Instance.SetSlow ();
 			worldPanel.SetActive (true);
 			Invoke ("worldFunc",5f);
