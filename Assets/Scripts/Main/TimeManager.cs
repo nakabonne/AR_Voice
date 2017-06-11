@@ -7,11 +7,13 @@ public class TimeManager : SingletonMonoBehaviour<TimeManager> {
 	[SerializeField]
 	static float timeLimit = 60;
 	float time = timeLimit;
+	bool slow = false;
+	float slowTime = 5f;
 
 	// Update is called once per frame
 	void Update () {
 		if (GameManager.isPlaying) {
-			if (time > 0) CountDown ();
+			//if (time > 0) CountDown ();
 			if (time < 0) Stop ();
 		}
 	}
@@ -23,7 +25,23 @@ public class TimeManager : SingletonMonoBehaviour<TimeManager> {
 		
 
 	void CountDown(){
-	    time -= Time.deltaTime;
+		if (slowTime <= 0) {
+			slowTime = 5f;
+			slow = false;
+		}
+		if (slow) {
+			time -= Time.deltaTime / 2;
+			slowTime -= Time.deltaTime;
+		}
+	    else time -= Time.deltaTime;
+	}
+
+	public void SetSlow(){
+		slow = true;
+	}
+
+	public float GetTime(){
+		return time;
 	}
 
 }

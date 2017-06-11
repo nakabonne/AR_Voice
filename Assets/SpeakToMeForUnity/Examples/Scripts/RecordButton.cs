@@ -1,17 +1,21 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class RecordButton : MonoBehaviour
 {
 	Button recordButton;
-	Text recordButtonText;
+	[SerializeField] Sprite micOn;
+	[SerializeField] Sprite micOff;
+	Image frame;
 
 	void Start()
 	{
 		SpeakToMeForUnity.PrepareRecording();
 
 		recordButton = GetComponent<Button>();
-		recordButtonText = transform.Find("Text").GetComponent<Text>();
+		frame = transform.GetChild (0).gameObject.GetComponent<Image>();
+		frame.fillAmount = 0;
 	}
 
 	public void OnCallback(string message) {
@@ -22,12 +26,20 @@ public class RecordButton : MonoBehaviour
 			return;
 
 		recordButton.interactable = (data[0] == "true");
-		recordButtonText.text = data[1];
 	}
 
 	public void OnTapped()
 	{
 		Debug.Log ("push");
 		SpeakToMeForUnity.RecordButtonTapped();
+		GetComponent<Image> ().sprite = micOn;
+		frame.fillAmount = 1;
+		frame.DOFillAmount (0, 5f);
+		Invoke ("AfterTapp", 5f);
+	}
+
+	void AfterTapp(){
+		SpeakToMeForUnity.RecordButtonTapped ();
+		GetComponent<Image> ().sprite = micOff;
 	}
 }

@@ -20,32 +20,7 @@ public class ShowAnimation : MonoBehaviour {
 	void Update () {
 		
 	}
-	
-	 void OnGUI(){
-		if (GUI.Button(new Rect(10, 210, 90, 30), "NestAnim"))
-		{
-			CurAnimClip ++;
-			if(CurAnimClip > clips.Length -1)
-				CurAnimClip = 0;
-			PlayAnim ();
-		}
-		if (GUI.Button(new Rect(10, 260, 90, 30), "On One Anim"))
-		{
-			CurAnimClip --;
-			if(CurAnimClip < 0)
-				CurAnimClip = clips.Length -1;
-			PlayAnim ();
-		}
-		if (GUI.Button(new Rect(10, 310, 90, 30), "RepeatPlay"))
-		{
-			PlayAnim ();
-		}
-//		if(clips [CurAnimClip] != null)
-//			GUI.Label(new Rect(10, 10, 100, 20), clips [CurAnimClip].name);
 
-		if (GUI.Button(new Rect(10, 110, 150, 30), "NextCommodity"))
-			ChooseChar ();
-	}
 
 	public GameObject[] Chrs;
 	public int i =0;

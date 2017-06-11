@@ -2,8 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHp : MonoBehaviour {
+public class EnemyHp : MonoBehaviour {
 	int hp = 3;
+	// Use this for initialization
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
 
 	void Damage(int damage){
 		hp -= damage;
@@ -11,10 +20,8 @@ public class PlayerHp : MonoBehaviour {
 
 
 	void OnCollisionEnter(Collision other){
-		if (other.gameObject.tag == "smallBullet") {
+		if (other.gameObject.tag == "PlayerBullet") {
 			Damage (1);
-		}else if (other.gameObject.tag == "bigBullet"){
-			Damage (2);
 		}
 	}
 }
