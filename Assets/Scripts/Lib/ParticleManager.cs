@@ -1,7 +1,7 @@
 ﻿/// <summary>
 /// 使い方
 /// ①Resourcesディレクトリ配下に生成したいパーティクルを配置
-/// ②ParticleManager.Instance.Create("パーティクル名");
+/// ②Instantiate(ParticleManager.Instance.Create("パーティクル名"));
 /// </summary>
 using System.Collections;
 using System.Collections.Generic;
